@@ -1,0 +1,12 @@
+# Lockfile
+pnpm-lock.yaml
+package-lock.json
+
+# Generated build
+.nuxt
+.nitro
+.cache
+.output
+
+# Logs
+*.log*
