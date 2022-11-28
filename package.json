@@ -5,9 +5,9 @@
         "dev": "nuxt dev",
         "format": "prettier -w .",
         "generate": "nuxt generate",
+        "lint": "prettier -c .",
         "preview": "nuxt preview",
-        "postinstall": "nuxt prepare",
-        "test": "prettier -c ."
+        "postinstall": "nuxt prepare"
     },
     "devDependencies": {
         "@nuxtjs/tailwindcss": "6.1.3",
