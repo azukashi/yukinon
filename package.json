@@ -1,4 +1,7 @@
 {
+    "name": "yukinon",
+    "description": "Front-end web of Yukinon Project",
+    "version": "0.0.1-next",
     "private": true,
     "scripts": {
         "build": "nuxt build",
@@ -9,6 +12,15 @@
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gifaldyazkaa/yukinon.git"
+    },
+    "author": {
+        "name": "Gifaldy Azka",
+        "url": "https://www.falcxxdev.ml"
+    },
+    "license": "MIT",
     "devDependencies": {
         "@nuxtjs/tailwindcss": "6.1.3",
         "nuxt": "3.0.0",
