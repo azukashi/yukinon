@@ -19,6 +19,13 @@
             <p class="mt-1 text-md text-slate-600 text-left">
                 Stay up-to-date until stable release by watching the repository!
             </p>
+            <p class="mt-1 text-md text-slate-600 text-left font-bold">
+                🚨 CRITICAL ISSUE:
+                <br />
+                <a href="https://github.com/gifaldyazkaa/yukinon/issues/3" class="link"
+                    >[important] translation help needed #3</a
+                >
+            </p>
             <p class="mt-8 text-[11px] text-slate-500">
                 <a href="https://twitter.com/nekonoyukin0" class="link">猫乃ユキノ</a> Project by
                 <a href="https://www.falcxxdev.ml" class="link">Falcxxdev</a> with
