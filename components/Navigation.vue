@@ -2,13 +2,13 @@
     <div>
         <header class="shadow-sm bg-white font-lexend">
             <nav class="navbar">
-                <NuxtLink to="/" class="font-bold">猫乃ユキノ</NuxtLink>
+                <NuxtLink to="/" class="navbar__link font-bold">猫乃ユキノ</NuxtLink>
                 <ul class="flex gap-4">
                     <li>
-                        <NuxtLink to="/" class="hidden md:block lg:block">Home</NuxtLink>
+                        <NuxtLink to="/" class="navbar__link hidden md:block lg:block">Home</NuxtLink>
                     </li>
-                    <li><NuxtLink to="/" class="hidden md:block lg:block">About</NuxtLink></li>
-                    <li><NuxtLink to="/" class="hidden md:block lg:block">Fan art</NuxtLink></li>
+                    <li><NuxtLink to="/" class="navbar__link hidden md:block lg:block">About</NuxtLink></li>
+                    <li><NuxtLink to="/" class="navbar__link hidden md:block lg:block">Fan art</NuxtLink></li>
                     <li>
                         <button class="btn bg-transparent h-[20px] w-[20px] hidden md:block lg:block">
                             <Icon size="20px" name="ri:moon-fill" />
