@@ -14,6 +14,10 @@
     }
 }
 
-.router-link-exact-active {
+body {
+    @apply bg-snow-200;
+}
+
+.navbar__link.router-link-exact-active {
     @apply text-transparent font-bold bg-gradient-to-r from-sky-400 to-violet-500 hover:from-sky-400 hover:to-pink-500 bg-clip-text;
 }
