@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss', '@nuxtjs/strapi', '@nuxtjs/i18n', 'nuxt-icon'],
+    publicRuntimeConfig: {
+        PUBLIC_API_URL: process.env.NUXT_PUBLIC_STRAPI_URL,
+    },
     tailwindcss: {
         configPath: 'tailwind.config.ts',
     },
@@ -9,6 +12,6 @@ export default defineNuxtConfig({
         defaultLocale: 'en',
     },
     strapi: {
-        url: 'https://yukinon-api.falcxxdev.ml',
+        url: process.env.NUXT_PUBLIC_STRAPI_URL,
     },
 });
