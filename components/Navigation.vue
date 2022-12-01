@@ -10,6 +10,22 @@
                     <li><NuxtLink to="/" class="navbar__link hidden md:block lg:block">About</NuxtLink></li>
                     <li><NuxtLink to="/" class="navbar__link hidden md:block lg:block">Fan art</NuxtLink></li>
                     <li>
+                        <NuxtLink
+                            class="hidden md:block lg:block"
+                            v-if="isEng"
+                            :to="switchLocalePath('ja-JP')"
+                            @click="handleSwitch"
+                            >日本</NuxtLink
+                        >
+                        <NuxtLink
+                            class="hidden md:block lg:block"
+                            v-else
+                            :to="switchLocalePath('en')"
+                            @click="handleSwitch"
+                            >English</NuxtLink
+                        >
+                    </li>
+                    <li>
                         <button class="btn bg-transparent h-[20px] w-[20px] hidden md:block lg:block">
                             <Icon size="20px" name="ri:moon-fill" />
                         </button>
@@ -27,10 +43,22 @@
             >
                 <ul class="p-4 bg-white/[.5] rounded-lg">
                     <li class="mb-2">
-                        <NuxtLink to="/" class="md:hidden lg:hidden">Home</NuxtLink>
+                        <NuxtLink to="/" class="navbar__link md:hidden lg:hidden">Home</NuxtLink>
                     </li>
-                    <li class="mb-2"><NuxtLink to="/" class="md:hidden lg:hidden">About</NuxtLink></li>
-                    <li class="mb-2"><NuxtLink to="/" class="md:hidden lg:hidden">Fan art</NuxtLink></li>
+                    <li class="mb-2"><NuxtLink to="/" class="navbar__link md:hidden lg:hidden">About</NuxtLink></li>
+                    <li class="mb-2"><NuxtLink to="/" class="navbar__link md:hidden lg:hidden">Fan art</NuxtLink></li>
+                    <li class="mb-2">
+                        <NuxtLink
+                            class="md:hidden lg:hidden"
+                            v-if="isEng"
+                            :to="switchLocalePath('ja-JP')"
+                            @click="handleSwitch"
+                            >日本</NuxtLink
+                        >
+                        <NuxtLink class="md:hidden lg:hidden" v-else :to="switchLocalePath('en')" @click="handleSwitch"
+                            >English</NuxtLink
+                        >
+                    </li>
                 </ul>
             </div>
         </header>
@@ -39,8 +67,13 @@
 
 <script setup lang="ts">
 let isToggle = ref(false);
+const isEng = ref(true);
 const handleToggle = () => {
     isToggle.value = !isToggle.value;
+};
+const switchLocalePath = useSwitchLocalePath();
+const handleSwitch = () => {
+    isEng.value = !isEng.value;
 };
 </script>
 
