@@ -22,6 +22,8 @@
     },
     "license": "MIT",
     "devDependencies": {
+        "@nuxtjs/i18n": "8.0.0-beta.6",
+        "@nuxtjs/strapi": "1.6.3",
         "@nuxtjs/tailwindcss": "6.1.3",
         "nuxt": "3.0.0",
         "nuxt-icon": "0.1.7",
