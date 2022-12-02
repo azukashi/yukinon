@@ -5,10 +5,18 @@
                 <NuxtLink to="/" class="navbar__link font-bold">猫乃ユキノ</NuxtLink>
                 <ul class="flex gap-4">
                     <li>
-                        <NuxtLink to="/" class="navbar__link hidden md:block lg:block">Home</NuxtLink>
+                        <NuxtLink :to="localePath('/')" class="navbar__link hidden md:block lg:block">Home</NuxtLink>
                     </li>
-                    <li><NuxtLink to="/" class="navbar__link hidden md:block lg:block">About</NuxtLink></li>
-                    <li><NuxtLink to="/" class="navbar__link hidden md:block lg:block">Fan art</NuxtLink></li>
+                    <li>
+                        <NuxtLink :to="localePath('/about')" class="navbar__link hidden md:block lg:block"
+                            >About</NuxtLink
+                        >
+                    </li>
+                    <li>
+                        <NuxtLink :to="localePath('/fanart')" class="navbar__link hidden md:block lg:block"
+                            >Fan art</NuxtLink
+                        >
+                    </li>
                     <li>
                         <NuxtLink
                             class="hidden md:block lg:block"
@@ -54,10 +62,16 @@
             >
                 <ul class="p-4 bg-snow-light/[.7] rounded-lg dark:bg-snow-dark/[.7]">
                     <li class="mb-2">
-                        <NuxtLink to="/" class="navbar__link md:hidden lg:hidden">Home</NuxtLink>
+                        <NuxtLink :to="localePath('/')" class="navbar__link md:hidden lg:hidden">Home</NuxtLink>
                     </li>
-                    <li class="mb-2"><NuxtLink to="/" class="navbar__link md:hidden lg:hidden">About</NuxtLink></li>
-                    <li class="mb-2"><NuxtLink to="/" class="navbar__link md:hidden lg:hidden">Fan art</NuxtLink></li>
+                    <li class="mb-2">
+                        <NuxtLink :to="localePath('/about')" class="navbar__link md:hidden lg:hidden">About</NuxtLink>
+                    </li>
+                    <li class="mb-2">
+                        <NuxtLink :to="localePath('/fanart')" class="navbar__link md:hidden lg:hidden"
+                            >Fan art</NuxtLink
+                        >
+                    </li>
                     <li class="mb-2">
                         <NuxtLink
                             class="md:hidden lg:hidden"
@@ -88,6 +102,7 @@ const handleToggle = () => {
     isToggle.value = !isToggle.value;
 };
 const switchLocalePath = useSwitchLocalePath();
+const localePath = useLocalePath();
 const handleSwitch = () => {
     isEng.value = !isEng.value;
 };
