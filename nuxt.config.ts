@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/strapi', '@nuxtjs/i18n', 'nuxt-icon'],
-    publicRuntimeConfig: {
+    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/strapi', '@nuxtjs/i18n', '@nuxtjs/color-mode', 'nuxt-icon'],
+    runtimeConfig: {
         PUBLIC_API_URL: process.env.NUXT_PUBLIC_STRAPI_URL,
     },
     tailwindcss: {
@@ -13,5 +13,8 @@ export default defineNuxtConfig({
     },
     strapi: {
         url: process.env.NUXT_PUBLIC_STRAPI_URL,
+    },
+    colorMode: {
+        classSuffix: '',
     },
 });
