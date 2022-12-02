@@ -10,7 +10,7 @@
         @apply container mx-auto p-4 fixed flex justify-between bg-snow-dark/[.1] max-w-full px-8 md:px-20 lg:px-[6.5rem] backdrop-blur-md z-10 dark:bg-snow-light/[.1];
     }
     .btn {
-        @apply rounded-md text-center flex justify-center active:ring-2 active:ring-sky-300;
+        @apply rounded-md text-center active:ring-2 active:ring-sky-300;
     }
 }
 
