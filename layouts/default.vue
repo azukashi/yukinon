@@ -1,5 +1,6 @@
 <template>
     <Navigation />
+    <NuxtLoadingIndicator color="#E1F3FC" />
     <div class="container mx-auto p-4">
         <slot />
     </div>
