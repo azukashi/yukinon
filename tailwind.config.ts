@@ -5,7 +5,8 @@ module.exports = {
                 lexend: ['Lexend', 'sans-serif'],
             },
             colors: {
-                'snow-200': '#E1F3FC',
+                'snow-light': '#E1F3FC',
+                'snow-dark': '#2D3B42',
             },
         },
     },
