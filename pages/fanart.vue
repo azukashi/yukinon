@@ -8,7 +8,7 @@
                     <div class="grid-card-img" :style="`background: url('${art.img}'); background-size: cover;`"></div>
                 </a>
                 <div
-                    class="px-6 py-2 w-full bg-snow-dark/[.6] text-snow-light backdrop-blur-sm text-center font-bold underline absolute bottom-0 dark:bg-snow-light/[.6] dark:text-snow-dark"
+                    class="px-6 py-2 w-full bg-snow-dark/[.6] text-snow-light backdrop-blur-[2px] text-center font-bold underline absolute bottom-0 dark:bg-snow-light/[.6] dark:text-snow-dark"
                 >
                     <a :href="art.usrLink">{{ art.username }}</a>
                 </div>
