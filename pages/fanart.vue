@@ -6,7 +6,7 @@
             <div v-for="art in arts.arts" class="grid-card group">
                 <a :href="art.source">
                     <div class="grid-card-img">
-                        <nuxt-img class="object-contain object-center" :src="art.img" alt="Fanart" loading="lazy" />
+                        <NuxtImg class="object-contain object-center" :src="art.img" alt="Fanart" loading="lazy" />
                     </div>
                 </a>
                 <div
