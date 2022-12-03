@@ -23,5 +23,5 @@ body {
 }
 
 .navbar__link.router-link-exact-active {
-    @apply text-transparent font-bold bg-gradient-to-r from-sky-400 to-violet-500 hover:from-sky-400 hover:to-pink-500 dark:to-violet-400 dark:hover:to-pink-400 bg-clip-text;
+    @apply text-transparent font-bold bg-gradient-to-r from-sky-400 to-pink-500 hover:from-sky-400 hover:to-pink-500 dark:to-pink-400 dark:hover:to-pink-400 bg-clip-text;
 }
