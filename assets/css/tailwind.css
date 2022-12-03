@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .grid-card {
+        @apply bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden relative hover:scale-95 transition-all duration-500;
+    }
+    .grid-card-img {
+        @apply w-full h-full bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500;
+    }
+}
+
 @layer utilities {
     .link {
         @apply text-sky-600 hover:text-sky-700 hover:underline active:text-sky-800;
