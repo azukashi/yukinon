@@ -2,7 +2,9 @@
     <div>
         <header class="shadow-sm bg-white font-lexend">
             <nav class="navbar">
-                <NuxtLink to="/" class="navbar__link font-bold">猫乃ユキノ</NuxtLink>
+                <NuxtLink to="/" class="navbar__link font-bold"
+                    ><NuxtImg src="/img/logo.png" height="26" width="auto" preload alt="Logo"
+                /></NuxtLink>
                 <ul class="flex gap-4">
                     <li>
                         <NuxtLink :to="localePath('/')" class="navbar__link hidden md:block lg:block">Home</NuxtLink>
