@@ -12,6 +12,7 @@ export default defineNuxtConfig({
         PUBLIC_API_URL: process.env.NUXT_PUBLIC_STRAPI_URL,
     },
     tailwindcss: {
+        cssPath: '~/public/css/tailwind.css',
         configPath: 'tailwind.config.ts',
     },
     i18n: {
