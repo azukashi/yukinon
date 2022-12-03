@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-14 px-6 md:px-12 lg:px-14 font-lexend">
+    <div class="mt-14 px-5 md:px-12 lg:px-14 font-lexend">
         <h2 class="mt-2 text-3xl font-semibold sm:mt-2">Fan art</h2>
         <p class="mt-1 sm:text-lg">Curated fan-made arts from Twitter & Pixiv</p>
         <div class="grid grid-cols-2 gap-2 md:grid-cols-4 mt-4">
@@ -29,6 +29,7 @@ const localePath = useLocalePath();
 const { data, pending, error }: any = await getData('fanart');
 const arts = data.value?.data?.attributes;
 useHead({
+    title: 'Fan art',
     bodyAttrs: {
         class: 'overflow-visible',
     },
