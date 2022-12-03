@@ -1,11 +1,4 @@
 <template>
-    <Head>
-        <Title>{{ bio.name.full }} Web</Title>
-        <Meta name="description" value="{{ bio.name.full }} Web with Nuxt 3 & Tailwind CSS" />
-        <Meta v-if="$colorMode.value == 'light'" name="color-theme" value="#E1F3FC" />
-        <Meta v-else name="color-theme" value="#2D3B42" />
-    </Head>
-
     <div class="font-lexend">
         <div class="container px-6 mt-24 max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:p-0">
             <div class="lg:p-12 lg:flex-1">
@@ -53,6 +46,7 @@ const bio = data.value?.data?.attributes;
 const home = homeInit.data.value?.data?.attributes;
 const localePath = useLocalePath();
 useHead({
+    title: 'Home',
     bodyAttrs: {
         class: 'overflow-hidden md:overflow-hidden lg:overflow-hidden',
     },
