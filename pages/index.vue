@@ -18,20 +18,22 @@
                         ><Icon name="material-symbols:arrow-forward-ios-rounded" size="24"
                     /></NuxtLink>
                 </div>
-                <img
+                <NuxtImg
                     src="https://cdn.upload.systems/uploads/61rmRLt9.png"
+                    class="mt-20 sm:mt-6 lg:hidden"
                     height="500"
                     width="500"
-                    class="mt-20 sm:mt-6 lg:hidden"
+                    preload
                     :alt="`${bio.name.full}`"
                 />
             </div>
             <div class="hidden lg:flex lg:w-1/2">
-                <img
+                <NuxtImg
                     src="https://cdn.upload.systems/uploads/61rmRLt9.png"
                     class="object-cover rounded-l-3xl absolute top-40 -right-52"
                     height="500"
                     width="500"
+                    preload
                     :alt="`${bio.name.full}`"
                 />
             </div>

@@ -5,7 +5,9 @@
         <div class="grid grid-cols-2 gap-2 md:grid-cols-4 mt-4">
             <div v-for="art in arts.arts" class="grid-card group">
                 <a :href="art.source">
-                    <div class="grid-card-img" :style="`background: url('${art.img}'); background-size: cover;`"></div>
+                    <div class="grid-card-img">
+                        <nuxt-img class="object-contain object-center" :src="art.img" alt="Fanart" loading="lazy" />
+                    </div>
                 </a>
                 <div
                     class="px-6 py-2 w-full bg-snow-dark/[.6] text-snow-light backdrop-blur-[2px] text-center font-bold underline absolute bottom-0 dark:bg-snow-light/[.6] dark:text-snow-dark"
