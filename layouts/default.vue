@@ -1,4 +1,9 @@
 <template>
+    <Head>
+        <Meta v-if="$colorMode.value == 'light'" name="theme-color" content="#E1F3FC" />
+        <Meta v-else name="theme-color" content="#2D3B42" />
+    </Head>
+
     <Navigation />
     <NuxtLoadingIndicator color="#38BDF8" />
     <div class="container mx-auto p-4">
@@ -6,7 +11,9 @@
     </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+_initHead();
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap');
