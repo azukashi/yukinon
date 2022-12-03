@@ -4,13 +4,7 @@
             class="container px-4 mt-14 max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:flex-wrap lg:gap-3 lg:justify-evenly lg:max-w-full lg:p-0"
         >
             <div class="hidden lg:flex lg:w-1/2">
-                <NuxtImg
-                    src="https://cdn.upload.systems/uploads/61rmRLt9.png"
-                    class="object-contain"
-                    height="500"
-                    width="500"
-                    preload
-                />
+                <NuxtImg src="/img/model.png" class="object-contain" preload />
             </div>
             <div class="lg:p-8 lg:flex-1">
                 <h2 class="mt-2 text-3xl font-semibold sm:mt-2">Overview</h2>
@@ -35,12 +29,7 @@
                         ><Icon name="material-symbols:arrow-back-ios-new-rounded" size="24"
                     /></NuxtLink>
                 </div>
-                <img
-                    src="https://cdn.upload.systems/uploads/61rmRLt9.png"
-                    height="500"
-                    width="500"
-                    class="mt-20 sm:mt-6 lg:hidden"
-                />
+                <img src="/img/model.png" class="mt-20 sm:mt-6 lg:hidden" />
             </div>
             <div class="lg:flex-[50%]">
                 <h2 class="mt-2 text-3xl font-semibold sm:mt-2">Socials</h2>
