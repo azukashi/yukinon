@@ -4,11 +4,12 @@
             class="container px-4 mt-14 max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:flex-wrap lg:gap-3 lg:justify-evenly lg:max-w-full lg:p-0"
         >
             <div class="hidden lg:flex lg:w-1/2">
-                <img
+                <NuxtImg
                     src="https://cdn.upload.systems/uploads/61rmRLt9.png"
                     class="object-contain"
                     height="500"
                     width="500"
+                    preload
                 />
             </div>
             <div class="lg:p-8 lg:flex-1">
