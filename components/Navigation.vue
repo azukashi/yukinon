@@ -36,14 +36,14 @@
                     <li>
                         <button
                             v-if="$colorMode.value == 'light'"
-                            class="btn bg-transparent h-[20px] w-[20px] hidden md:block lg:block"
+                            class="btn bg-transparent h-[20px] w-[20px]"
                             @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')"
                         >
                             <Icon size="20px" name="ri:moon-fill" />
                         </button>
                         <button
                             v-else
-                            class="btn bg-transparent h-[20px] w-[20px] hidden md:block lg:block"
+                            class="btn bg-transparent h-[20px] w-[20px]"
                             @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')"
                         >
                             <Icon size="20px" name="ri:sun-fill" />
