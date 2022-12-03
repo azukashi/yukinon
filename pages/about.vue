@@ -43,7 +43,9 @@
             </div>
             <div class="lg:flex-[50%]">
                 <h2 class="mt-2 text-3xl font-semibold sm:mt-2">Socials</h2>
-                <p class="mt-2 sm:text-lg">You can find her from stream archives, etc by visiting her socials below!</p>
+                <p class="mt-2 sm:text-lg">
+                    She is discoverable in these SNS. You can find her by visiting her socials below!
+                </p>
                 <div class="mt-2 mb-16">
                     <div v-for="social in socials.links" :class="`inline text-snow-light`">
                         <a
