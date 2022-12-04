@@ -11,8 +11,14 @@ export default defineNuxtConfig({
     runtimeConfig: {
         PUBLIC_API_URL: process.env.NUXT_PUBLIC_STRAPI_URL,
     },
+    app: {
+        pageTransition: {
+            name: 'page',
+            mode: 'out-in',
+        },
+    },
     tailwindcss: {
-        cssPath: '~/public/css/tailwind.css',
+        cssPath: '~/assets/css/tailwind.css',
         configPath: 'tailwind.config.ts',
     },
     i18n: {
