@@ -3,7 +3,7 @@
         <header class="shadow-sm bg-white font-lexend">
             <nav class="navbar">
                 <NuxtLink to="/" class="navbar__link font-bold"
-                    ><NuxtImg src="/img/logo.png" height="26" width="auto" preload alt="Logo"
+                    ><NuxtImg src="/img/logo.png" class="h-[26px] w-auto" preload alt="Logo"
                 /></NuxtLink>
                 <ul class="flex gap-4">
                     <li>
