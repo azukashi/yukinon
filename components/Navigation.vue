@@ -39,6 +39,7 @@
                         <button
                             v-if="$colorMode.value == 'light'"
                             class="btn bg-transparent h-[20px] w-[20px]"
+                            aria-label="Toggle dark mode"
                             @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')"
                         >
                             <Icon size="20px" name="ri:moon-fill" />
@@ -46,13 +47,18 @@
                         <button
                             v-else
                             class="btn bg-transparent h-[20px] w-[20px]"
+                            aria-label="Toggle light mode"
                             @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')"
                         >
                             <Icon size="20px" name="ri:sun-fill" />
                         </button>
                     </li>
                     <li>
-                        <button @click="handleToggle" class="btn bg-transparent h-[24px] w-[24px] md:hidden lg:hidden">
+                        <button
+                            @click="handleToggle"
+                            class="btn bg-transparent h-[24px] w-[24px] md:hidden lg:hidden"
+                            aria-label="Toggle navigation menu"
+                        >
                             <Icon size="24px" name="charm:menu-hamburger" />
                         </button>
                     </li>
