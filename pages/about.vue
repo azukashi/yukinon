@@ -21,11 +21,13 @@
                     <NuxtLink
                         :to="localePath('/fanart')"
                         class="inline-block px-5 py-3 bg-gradient-to-r from-pink-400/[.5] to-violet-500/[.5] hover:from-violet-400/[.5] hover:to-sky-500/[.5] backdrop-blur-sm text-snow-light rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm sm:text-base fixed bottom-8 right-8 z-10 hover:translate-x-4 transition-all"
+                        aria-label="Go to next page"
                         ><Icon name="material-symbols:arrow-forward-ios-rounded" size="24"
                     /></NuxtLink>
                     <NuxtLink
                         :to="localePath('/')"
                         class="inline-block px-5 py-3 bg-gradient-to-r from-violet-500/[.5] to-pink-400/[.5] hover:from-red-500/[.5] hover:to-pink-400/[.5] backdrop-blur-sm text-snow-light rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm sm:text-base fixed bottom-8 left-8 z-10 hover:-translate-x-4 transition-all"
+                        aria-label="Go to previous page"
                         ><Icon name="material-symbols:arrow-back-ios-new-rounded" size="24"
                     /></NuxtLink>
                 </div>
