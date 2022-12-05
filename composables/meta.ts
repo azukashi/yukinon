@@ -16,7 +16,7 @@ export const _initHead = async () => {
             { 'http-equiv': 'x-ua-compatible', content: 'IE=edge' },
             { name: 'charset', content: 'utf-8' },
             { name: 'description', content: `I'm ${bio.value.name.full}, Domestic cat and a maid from Re:AcT.` },
-            { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
             { name: 'author', content: bio.value.name.full },
             { name: 'publisher', content: 'Falcxxdev' },
             // Opengraph (Facebook, Discord & average SNS)
