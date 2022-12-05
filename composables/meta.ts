@@ -1,22 +1,27 @@
+import { Ref } from 'nuxt/dist/app/compat/capi';
+
 export const _initHead = async () => {
     const { data }: any = await getData('biodata');
-    const bio = data.value?.data?.attributes;
+    const bio: Ref = ref(data.value?.data?.attributes);
 
     useHead({
         titleTemplate: titleChunk => {
-            return titleChunk ? `${titleChunk} | ${bio.name.full} website` : `${bio.name.full} website`;
+            return titleChunk ? `${titleChunk} | ${bio.value.name.full} website` : `${bio.value.name.full} website`;
+        },
+        htmlAttrs: {
+            lang: 'en',
         },
         meta: [
             // General tags
             { 'http-equiv': 'x-ua-compatible', content: 'IE=edge' },
             { name: 'charset', content: 'utf-8' },
-            { name: 'description', content: `I'm ${bio.name.full}, Domestic cat and a maid from Re:AcT.` },
-            { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' },
-            { name: 'author', content: bio.name.full },
+            { name: 'description', content: `I'm ${bio.value.name.full}, Domestic cat and a maid from Re:AcT.` },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0' },
+            { name: 'author', content: bio.value.name.full },
             { name: 'publisher', content: 'Falcxxdev' },
             // Opengraph (Facebook, Discord & average SNS)
             { name: 'og:type', content: 'website' },
-            { name: 'og:site_name', content: bio.name.full },
+            { name: 'og:site_name', content: bio.value.name.full },
             { name: 'og:url', content: 'https://yukinon.falcxxdev.ml' },
         ],
         script: [
