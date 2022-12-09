@@ -34,3 +34,26 @@ body {
 .navbar__link.router-link-exact-active {
     @apply text-transparent font-bold bg-gradient-to-r from-sky-400 to-pink-500 hover:from-sky-400 hover:to-pink-500 dark:to-pink-400 dark:hover:to-pink-400 bg-clip-text;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-sky-400;
+}
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-sky-500;
+}
+::-webkit-scrollbar-thumb:active {
+    @apply bg-sky-600;
+}
+
+/* Selection */
+::-moz-selection {
+    @apply text-snow-dark bg-sky-300;
+}
+
+::selection {
+    @apply text-snow-dark bg-sky-300;
+}
