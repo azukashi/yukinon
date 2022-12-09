@@ -11,7 +11,7 @@ She is a domestic cat & maid. Started debut on May 27, 2021. On YouTube, she mai
 
 I made this for a case study on using Nuxt 3 as a web framework which was just learned by me recently. Not gonna lying, but the first idea that came to my mind was a virtual youtuber. I thought about making a fan-made website about a vtuber. Before this project was made, I didn't know who I was going to turn the idea into. When I scrolled through YouTube, I found a VTuber from Re:AcT. None other than her. And that's where the project started.
 
-> Shoutout to [Nuxt 3](https://nuxt.com) for Front-end web framework, [nuxt-tailwindcss](https://tailwind.nuxt.dev) for the styling framework, [Strapi](https://strapi.com) for content managing system, and others dependencies I use in this project!
+> Shoutout to [Nuxt 3](https://nuxt.com) for Front-end web framework, [nuxt-tailwindcss](https://tailwind.nuxt.dev) for the styling framework, [Strapi](https://strapi.com) for content managing system, and other dependencies I use in this project!
 
 ## 💎️ Features
 
@@ -26,18 +26,18 @@ Currently, it supports English, and Japanese. This is possible by providing mult
 
 ### 🌗️ Switch theme toggle
 
-Self-explanatory. Very basic features that lets user to switch theme from Light to Dark, and _vice versa_. This feature following your system theme. If your device currently using dark mode, it will follows your system preference. (Default:Light mode)
+Self-explanatory. Very basic features that lets user to switch theme from Light to Dark, and _vice versa_. This feature following your system theme. If your device currently using dark mode, it will follows your system preference. (Default: Light mode)
 
 ### ⌛️ Server-side Rendering (SSR)
 
-This is a method of loading a JavaScript-based (_.mjs or _.cjs) website on the server side. So, if a website implements SSR, an HTML document will be generated on every request. Then the document is sent from the server so that it can be displayed on the client's browser. Applying SSR will cause the initial page load of a website to be faster and increase First Contentful Paint (FCP).
+This is a method of loading a JavaScript-based (\*.mjs or \*.cjs) website on the server side. So, if a website implements SSR, an HTML document will be generated on every request. Then the document is sent from the server so that it can be displayed on the client's browser. Applying SSR will cause the initial page load of a website to be faster and increase First Contentful Paint (FCP).
 
 > **Warning**
 > If you encountering long page load, that's because the server is hosted on different locations. In the fact, Back-end CMS are hosted in `Paris - mysql19.paris1`, Front-end app is hosted at `Tokyo, Japan (Northeast) - hnd1`. To retrieve the data, it requires time because Front-end and Back-end are hosted in different location.
 
 ## 🗓️ Roadmap
 
-I will put this here because I know well I won't do them. Things that can be added or improved and priority, the reason why I didn't do it:
+I will put this here because I know well I won't do them. Things that can be added or improved, priority, and the reason why I didn't do it:
 
 | Task name                 | Priority | Reason                                                                                                                                                                                                    |
 | ------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
