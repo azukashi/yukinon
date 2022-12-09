@@ -1,40 +1,50 @@
 <template>
-    <Head>
-        <Title>猫乃ユキノ Web</Title>
-        <Meta name="description" value="猫乃ユキノ Web with Nuxt 3 & Tailwind CSS" />
-    </Head>
-
-    <div class="mx-5 font-lexend">
-        <div
-            class="rounded-xl shadow-xl p-10 mt-16 mx-auto max-w-xl text-center backdrop-blur-md bg-[url('https://cdn.upload.systems/uploads/z8qm1sW8.jpg')] bg-contain bg-no-repeat border-2 border-sky-300 border-dashed hover:border-indigo-400 hover:-translate-y-3 transition-all"
-        >
-            <h2 class="text-2xl font-bold text-slate-700"><Icon name="🌨" /> Development mode</h2>
-            <p class="mt-4 text-lg text-slate-600">Sorry, this website is still in development progress.</p>
-            <p class="mt-4 text-md text-slate-600 text-left">
-                If you want to see development version, please visit preview deployment on
-                <a href="https://next-yukinon.falcxxdev.ml" class="link"
-                    ><code class="text-sky-600">next</code> version</a
-                >.
-            </p>
-            <p class="mt-1 text-md text-slate-600 text-left">
-                Stay up-to-date until stable release by watching the repository!
-            </p>
-            <p class="mt-1 text-md text-slate-600 text-left font-bold">
-                🚨 CRITICAL ISSUE:
-                <br />
-                <a href="https://github.com/gifaldyazkaa/yukinon/issues/3" class="link"
-                    >[important] translation help needed #3</a
-                >
-            </p>
-            <p class="mt-8 text-[11px] text-slate-500">
-                <a href="https://twitter.com/nekonoyukin0" class="link">猫乃ユキノ</a> Project by
-                <a href="https://www.falcxxdev.ml" class="link">Falcxxdev</a> with
-                <a href="https://nuxt.com" class="link">Nuxt 3</a>
-            </p>
+    <div class="font-lexend">
+        <div class="container px-6 mt-24 max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:p-0">
+            <div class="lg:p-12 lg:flex-1">
+                <h1 class="text-4xl font-bold sm:text-3xl md:text-5xl">{{ bio.name.full }}</h1>
+                <h2 class="mt-2 text-xl font-semibold sm:mt-2 sm:text-xl">
+                    {{ home.greeting }}
+                    <br />
+                    {{ home.intro }}
+                </h2>
+                <p class="mt-2 sm:text-lg">
+                    {{ home.description }}
+                </p>
+                <div class="mt-2 sm:mt-6">
+                    <NuxtLink
+                        :to="localePath('/about')"
+                        class="inline-block px-5 py-3 bg-gradient-to-r from-pink-400/[.6] to-violet-500/[.6] hover:from-violet-400/[.6] hover:to-sky-500/[.6] backdrop-blur-sm text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm sm:text-base absolute bottom-8 right-8 z-10 hover:translate-x-4 transition-all"
+                        aria-label="Go to next page"
+                        ><Icon name="material-symbols:arrow-forward-ios-rounded" size="24"
+                    /></NuxtLink>
+                </div>
+                <NuxtImg src="/img/model.png" class="mt-20 sm:mt-6 lg:hidden" preload :alt="`${bio.name.full}`" />
+            </div>
+            <div class="hidden lg:flex lg:w-1/2">
+                <NuxtImg
+                    src="/img/model.png"
+                    class="object-cover rounded-l-3xl absolute top-52 -right-36"
+                    preload
+                    :alt="`${bio.name.full}`"
+                />
+            </div>
         </div>
     </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { data, pending, error }: any = await getData('biodata');
+const homeInit: any = await getData('home');
+const bio = data.value?.data?.attributes;
+const home = homeInit.data.value?.data?.attributes;
+const localePath = useLocalePath();
+useHead({
+    title: 'Home',
+    bodyAttrs: {
+        class: 'overflow-hidden md:overflow-hidden lg:overflow-hidden',
+    },
+});
+</script>
 
-<style scoped></style>
+<style></style>
