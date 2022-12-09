@@ -24,6 +24,10 @@ export const _initHead = async () => {
             { name: 'og:site_name', content: bio.value.name.full },
             { name: 'og:url', content: 'https://yukinon.falcxxdev.ml' },
         ],
+        link: [
+            { rel: 'icon', href: '/img/favicon.png' },
+            { rel: 'canonical', href: 'https://yukinon.falcxxdev.ml' },
+        ],
         script: [
             {
                 src: 'https://umami.falcxxdev.ml/umami.js',
