@@ -27,6 +27,7 @@ export const _initHead = async () => {
             { name: 'og:image', content: 'https://cdn.upload.systems/uploads/qMFHQblV.png' },
             // Twitter
             { name: 'twitter:title', content: `${bio.value.name.full} website` },
+            { name: 'twitter:image', content: 'https://cdn.upload.systems/uploads/qMFHQblV.png' },
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:site', content: '@nekonoyukin0' },
             { name: 'twitter:creator', content: '@falcxxdev' },
