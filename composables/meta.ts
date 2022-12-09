@@ -24,8 +24,6 @@ export const _initHead = async () => {
             { name: 'og:site_name', content: bio.value.name.full },
             { name: 'og:url', content: 'https://yukinon.falcxxdev.ml' },
             { name: 'og:image', content: 'https://cdn.upload.systems/uploads/qMFHQblV.png' },
-            { name: 'og:image:width', content: '1280' },
-            { name: 'og:image:height', content: '630' },
             // Twitter
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:site', content: '@nekonoyukin0' },
