@@ -1,24 +1,24 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@nuxt/image-edge': 1.0.0-27827328.bc9ddc0
+  '@nuxt/image-edge': 1.0.0-27840416.dc1ed65
   '@nuxtjs/color-mode': 3.2.0
-  '@nuxtjs/i18n': 8.0.0-beta.6
+  '@nuxtjs/i18n': 8.0.0-beta.7
   '@nuxtjs/strapi': 1.6.3
   '@nuxtjs/tailwindcss': 6.1.3
   nuxt: 3.0.0
   nuxt-icon: 0.1.8
-  prettier: 2.8.0
+  prettier: 2.8.1
 
 devDependencies:
-  '@nuxt/image-edge': 1.0.0-27827328.bc9ddc0
+  '@nuxt/image-edge': 1.0.0-27840416.dc1ed65
   '@nuxtjs/color-mode': 3.2.0
-  '@nuxtjs/i18n': 8.0.0-beta.6
+  '@nuxtjs/i18n': 8.0.0-beta.7
   '@nuxtjs/strapi': 1.6.3
   '@nuxtjs/tailwindcss': 6.1.3
   nuxt: 3.0.0
   nuxt-icon: 0.1.8
-  prettier: 2.8.0
+  prettier: 2.8.1
 
 packages:
 
@@ -607,8 +607,8 @@ packages:
     resolution: {integrity: sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==}
     dev: true
 
-  /@nuxt/image-edge/1.0.0-27827328.bc9ddc0:
-    resolution: {integrity: sha512-8fy6dSJaH9I5FKPK4EA6ddgUWNkxz2Y1AGIKVbAaRKftyK4y66gHmA+pbPPjb1cgYw6pWoWrnA4JxsHKelD8+A==}
+  /@nuxt/image-edge/1.0.0-27840416.dc1ed65:
+    resolution: {integrity: sha512-r+lRkdAeB49wCpYmZAHWrhXNtjTSt3kz8MuPoVPpZB40FOVEpPCIQF8dBI5tXM19YOg76yFCdvpt1TFq3irA7g==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     dependencies:
       '@nuxt/kit': 3.0.0
@@ -836,8 +836,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxtjs/i18n/8.0.0-beta.6:
-    resolution: {integrity: sha512-aZJ1cYmRR/r92O33PTmL8czMq2lBMliyPFzLCOB5BA3oFKY0WafTAPxi8f/VYtlWf+8JT22oZ2UeZRhpxdFPuw==}
+  /@nuxtjs/i18n/8.0.0-beta.7:
+    resolution: {integrity: sha512-TH0cQz2XDSOdBsO3ZBjWC107IaPNTezPwDFPdUwCU0wCP7JfB1kwke4mkCLeizUijFbKTTlAsFnGkyyvQe7UmQ==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     dependencies:
       '@intlify/bundle-utils': 3.4.0_vue-i18n@9.3.0-beta.10
@@ -4757,8 +4757,8 @@ packages:
     dev: true
     optional: true
 
-  /prettier/2.8.0:
-    resolution: {integrity: sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==}
+  /prettier/2.8.1:
+    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -5209,6 +5209,7 @@ packages:
 
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
+    deprecated: Please use @jridgewell/sourcemap-codec instead
     dev: true
 
   /stable/0.1.8:
