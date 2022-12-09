@@ -15,7 +15,7 @@ export const _initHead = async () => {
             // General tags
             { 'http-equiv': 'x-ua-compatible', content: 'IE=edge' },
             { name: 'charset', content: 'utf-8' },
-            { name: 'description', content: `I'm ${bio.value.name.full}, Domestic cat and a maid from Re:AcT.` },
+            { name: 'description', content: `I'm ${bio.value.name.full}, A cat maid who loves to serve.` },
             { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
             { name: 'author', content: bio.value.name.full },
             { name: 'publisher', content: 'Falcxxdev' },
@@ -23,6 +23,13 @@ export const _initHead = async () => {
             { name: 'og:type', content: 'website' },
             { name: 'og:site_name', content: bio.value.name.full },
             { name: 'og:url', content: 'https://yukinon.falcxxdev.ml' },
+            { name: 'og:image', content: 'https://cdn.upload.systems/uploads/qMFHQblV.png' },
+            { name: 'og:image:width', content: '1280' },
+            { name: 'og:image:height', content: '630' },
+            // Twitter
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { name: 'twitter:site', content: '@nekonoyukin0' },
+            { name: 'twitter:creator', content: '@falcxxdev' },
         ],
         link: [
             { rel: 'icon', href: '/img/favicon.png' },
