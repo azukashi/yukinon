@@ -20,11 +20,13 @@ export const _initHead = async () => {
             { name: 'author', content: bio.value.name.full },
             { name: 'publisher', content: 'Falcxxdev' },
             // Opengraph (Facebook, Discord & average SNS)
+            { name: 'og:title', content: `${bio.value.name.full} website` },
             { name: 'og:type', content: 'website' },
             { name: 'og:site_name', content: bio.value.name.full },
             { name: 'og:url', content: 'https://yukinon.falcxxdev.ml' },
             { name: 'og:image', content: 'https://cdn.upload.systems/uploads/qMFHQblV.png' },
             // Twitter
+            { name: 'twitter:title', content: `${bio.value.name.full} website` },
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:site', content: '@nekonoyukin0' },
             { name: 'twitter:creator', content: '@falcxxdev' },
