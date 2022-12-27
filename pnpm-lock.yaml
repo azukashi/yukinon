@@ -5,7 +5,7 @@ specifiers:
   '@nuxtjs/color-mode': 3.2.0
   '@nuxtjs/i18n': 8.0.0-beta.7
   '@nuxtjs/strapi': 1.6.3
-  '@nuxtjs/tailwindcss': 6.1.3
+  '@nuxtjs/tailwindcss': 6.2.0
   nuxt: 3.0.0
   nuxt-icon: 0.1.8
   prettier: 2.8.1
@@ -15,7 +15,7 @@ devDependencies:
   '@nuxtjs/color-mode': 3.2.0
   '@nuxtjs/i18n': 8.0.0-beta.7
   '@nuxtjs/strapi': 1.6.3
-  '@nuxtjs/tailwindcss': 6.1.3
+  '@nuxtjs/tailwindcss': 6.2.0
   nuxt: 3.0.0
   nuxt-icon: 0.1.8
   prettier: 2.8.1
@@ -882,8 +882,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxtjs/tailwindcss/6.1.3:
-    resolution: {integrity: sha512-XgoltsFhpX5SCxgUA9cEyLuKyH9xkjlfT+npDQNhSW71/BpeNPmmtjyD+o5ShAvyiZD2AzvZ0/P/eMNDfT33fA==}
+  /@nuxtjs/tailwindcss/6.2.0:
+    resolution: {integrity: sha512-/075zKwpXmRpZlVTlJetb0BY+YCdZuCE0n2JEKP+V0bb64ZuuPRSfq6XHPXiVbo7NRI373OZqYKckJu7VtY/aQ==}
     dependencies:
       '@nuxt/kit': 3.0.0
       '@nuxt/postcss8': 1.1.3
@@ -892,7 +892,6 @@ packages:
       clear-module: 4.1.2
       consola: 2.15.3
       defu: 6.1.1
-      h3: 0.8.6
       postcss: 8.4.19
       postcss-custom-properties: 12.1.10_postcss@8.4.19
       postcss-nesting: 10.2.0_postcss@8.4.19
@@ -2907,15 +2906,6 @@ packages:
       duplexer: 0.1.2
     dev: true
 
-  /h3/0.8.6:
-    resolution: {integrity: sha512-CSWNOKa3QGo67rFU2PhbFTp0uPJtilNji2Z0pMiSRQt3+OkIW0u3E1WMJqIycLqaTgb9JyFqH/S4mcTyyGtvyQ==}
-    dependencies:
-      cookie-es: 0.5.0
-      destr: 1.2.1
-      radix3: 0.2.1
-      ufo: 0.8.6
-    dev: true
-
   /h3/1.0.1:
     resolution: {integrity: sha512-gDCGpRvjchZW2JBlTqbJ9IOs+mdkXXuwSQkSye+jubHAv/UhdamKqoQvd4RFgyBNjHSId8Y+b10UdTcPlP/V+w==}
     dependencies:
@@ -4807,10 +4797,6 @@ packages:
   /quick-lru/5.1.1:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
-    dev: true
-
-  /radix3/0.2.1:
-    resolution: {integrity: sha512-FnhArTl5Tq7dodiLeSPKrDUyCQuJqEncP8cKdyy399g8F/cz7GH6FmzA3Rkosu2IZMkpswFFwXfb2ERSiL06pg==}
     dev: true
 
   /radix3/1.0.0:
