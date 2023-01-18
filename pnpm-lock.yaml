@@ -4,21 +4,21 @@ specifiers:
   '@nuxt/image-edge': 1.0.0-27840416.dc1ed65
   '@nuxtjs/color-mode': 3.2.0
   '@nuxtjs/i18n': 8.0.0-beta.7
-  '@nuxtjs/strapi': 1.6.3
+  '@nuxtjs/strapi': 1.7.0
   '@nuxtjs/tailwindcss': 6.2.0
   nuxt: 3.0.0
-  nuxt-icon: 0.2.3
-  prettier: 2.8.2
+  nuxt-icon: 0.2.6
+  prettier: 2.8.3
 
 devDependencies:
   '@nuxt/image-edge': 1.0.0-27840416.dc1ed65
   '@nuxtjs/color-mode': 3.2.0
   '@nuxtjs/i18n': 8.0.0-beta.7
-  '@nuxtjs/strapi': 1.6.3
+  '@nuxtjs/strapi': 1.7.0
   '@nuxtjs/tailwindcss': 6.2.0
   nuxt: 3.0.0
-  nuxt-icon: 0.2.3
-  prettier: 2.8.2
+  nuxt-icon: 0.2.6
+  prettier: 2.8.3
 
 packages:
 
@@ -379,8 +379,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/message-compiler': 9.3.0-beta.15
-      '@intlify/shared': 9.3.0-beta.15
+      '@intlify/message-compiler': 9.3.0-beta.16
+      '@intlify/shared': 9.3.0-beta.16
       jsonc-eslint-parser: 1.4.1
       source-map: 0.6.1
       vue-i18n: 9.3.0-beta.10
@@ -412,11 +412,11 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /@intlify/message-compiler/9.3.0-beta.15:
-    resolution: {integrity: sha512-kxx+pXsyoWhyFLEaJgnMk4AFiW3fvaCqpiql1alOHtkvQwzDKlrcKJ784GO4v/8SLt6JUHWfPpQH65GoYahdLA==}
+  /@intlify/message-compiler/9.3.0-beta.16:
+    resolution: {integrity: sha512-CGQI3xRcs1ET75eDQ0DUy3MRYOqTauRIIgaMoISKiF83gqRWg93FqN8lGMKcpBqaF4tI0JhsfosCaGiBL9+dnw==}
     engines: {node: '>= 14'}
     dependencies:
-      '@intlify/shared': 9.3.0-beta.15
+      '@intlify/shared': 9.3.0-beta.16
       source-map: 0.6.1
     dev: true
 
@@ -425,8 +425,8 @@ packages:
     engines: {node: '>= 14'}
     dev: true
 
-  /@intlify/shared/9.3.0-beta.15:
-    resolution: {integrity: sha512-thDJ+TGK8GGmOrgh/Vul24pPvRtRGvCyuGXcw/uh2t3lyJsCPfhzY5ZihJFkGvKEl4/J4M0F/SAeWKoZNm7hlw==}
+  /@intlify/shared/9.3.0-beta.16:
+    resolution: {integrity: sha512-kXbm4svALe3lX+EjdJxfnabOphqS4yQ1Ge/iIlR8tvUiYRCoNz3hig1M4336iY++Dfx5ytEQJPNjIcknNIuvig==}
     engines: {node: '>= 14'}
     dev: true
 
@@ -446,7 +446,7 @@ packages:
         optional: true
     dependencies:
       '@intlify/bundle-utils': 3.4.0_vue-i18n@9.3.0-beta.10
-      '@intlify/shared': 9.3.0-beta.15
+      '@intlify/shared': 9.3.0-beta.16
       '@rollup/pluginutils': 4.2.1
       '@vue/compiler-sfc': 3.2.45
       debug: 4.3.4
@@ -717,7 +717,7 @@ packages:
       c12: 1.0.1
       create-require: 1.1.1
       defu: 6.1.1
-      jiti: 1.16.0
+      jiti: 1.16.2
       pathe: 1.0.0
       pkg-types: 1.0.1
       postcss-import-resolver: 2.0.0
@@ -725,7 +725,7 @@ packages:
       std-env: 3.3.1
       ufo: 1.0.0
       unimport: 1.0.1
-      untyped: 1.2.1
+      untyped: 1.2.2
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -738,7 +738,7 @@ packages:
       c12: 1.0.1
       create-require: 1.1.1
       defu: 6.1.1
-      jiti: 1.16.0
+      jiti: 1.16.2
       pathe: 1.0.0
       pkg-types: 1.0.1
       postcss-import-resolver: 2.0.0
@@ -746,7 +746,7 @@ packages:
       std-env: 3.3.1
       ufo: 1.0.0
       unimport: 1.0.1_rollup@2.79.1
-      untyped: 1.2.1
+      untyped: 1.2.2
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -768,7 +768,7 @@ packages:
       git-url-parse: 13.1.0
       inquirer: 9.1.4
       is-docker: 3.0.0
-      jiti: 1.16.0
+      jiti: 1.16.2
       mri: 1.2.0
       nanoid: 4.0.0
       node-fetch: 3.3.0
@@ -883,8 +883,8 @@ packages:
       - vue-router
     dev: true
 
-  /@nuxtjs/strapi/1.6.3:
-    resolution: {integrity: sha512-KDecBAMaKZ1dw4zALKKLA+TnAtaXfXTUgd2vP2+JsFk7xnh7QsaLtK9R+nINZkH5ImoK2CPFHlKz8/4Yfwb02w==}
+  /@nuxtjs/strapi/1.7.0:
+    resolution: {integrity: sha512-58HCziFn/wJ+OKZVem9EiePbL/VYCPyK9XC7S+S61jrC32bYdBGAO3azDZV9DHR0jMvfoLfjCiI2YuBqCPloUA==}
     dependencies:
       '@nuxt/kit': 3.0.0
       defu: 6.1.1
@@ -1608,7 +1608,7 @@ packages:
       defu: 6.1.1
       dotenv: 16.0.3
       gittar: 0.1.1
-      jiti: 1.16.0
+      jiti: 1.16.2
       mlly: 0.5.17
       pathe: 0.3.9
       pkg-types: 0.3.6
@@ -1621,7 +1621,7 @@ packages:
       defu: 6.1.1
       dotenv: 16.0.3
       gittar: 0.1.1
-      jiti: 1.16.0
+      jiti: 1.16.2
       mlly: 1.0.0
       pathe: 1.0.0
       pkg-types: 1.0.1
@@ -3365,6 +3365,11 @@ packages:
     hasBin: true
     dev: true
 
+  /jiti/1.16.2:
+    resolution: {integrity: sha512-OKBOVWmU3FxDt/UH4zSwiKPuc1nihFZiOD722FuJlngvLz2glX1v2/TJIgoA4+mrpnXxHV6dSAoCvPcYQtoG5A==}
+    hasBin: true
+    dev: true
+
   /js-cookie/3.0.1:
     resolution: {integrity: sha512-+0rgsUXZu4ncpPxRL+lNEptWMOWl9etvPHc/koSRp6MPwpRYAhmk0dUG00J4bxVV3r9uUzfo24wW0knS07SKSw==}
     engines: {node: '>=12'}
@@ -3904,7 +3909,7 @@ packages:
       hookable: 5.4.2
       http-proxy: 1.18.1
       is-primitive: 3.0.1
-      jiti: 1.16.0
+      jiti: 1.16.2
       klona: 2.0.5
       knitwork: 1.0.0
       listhen: 1.0.0
@@ -4061,27 +4066,26 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /nuxt-config-schema/0.4.1:
-    resolution: {integrity: sha512-KvTdqXIEBDtL5VQdRkBQS6M4Gk/JYNLZsqhbvUCZEgaSh+UJuJfR3DvjoF2Wr787/M9K8idETh8+OCbTbJo0Qw==}
+  /nuxt-config-schema/0.4.2:
+    resolution: {integrity: sha512-Bshm9gPNwFwvjOXJs5vwmRZAEHrJYzLY3hru++nSedjVbAnoAj9pue3Q+Fuhp/y2gHZvRRXYDOVurlC5IQ5Uzg==}
     dependencies:
       '@nuxt/kit': 3.0.0
       changelogen: 0.4.0
       defu: 6.1.1
-      jiti: 1.16.0
+      jiti: 1.16.2
       pathe: 1.0.0
-      untyped: 1.2.1
+      untyped: 1.2.2
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: true
 
-  /nuxt-icon/0.2.3:
-    resolution: {integrity: sha512-NBzUFbapWSXwfwkJD/CvrPOAihIkWP9SHjwf785WAZU3RwaZo6+OW4iaotWkQEGHlJNLY6T+MY9uNeLFGH+Bow==}
+  /nuxt-icon/0.2.6:
+    resolution: {integrity: sha512-eQxv+/j9tHPp4bLmguuMs8h1sKEME58oI44xELRE65cpay5fjeZ2TXUfVSVK1qkLzbbajjHy58sZUAKDsSWE5A==}
     dependencies:
       '@iconify/vue': 4.0.2
       '@nuxt/kit': 3.0.0
-      nuxt-config-schema: 0.4.1
-      untyped: 1.2.1
+      nuxt-config-schema: 0.4.2
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -4885,8 +4889,8 @@ packages:
     dev: true
     optional: true
 
-  /prettier/2.8.2:
-    resolution: {integrity: sha512-BtRV9BcncDyI2tsuS19zzhzoxD8Dh8LiCx7j7tHzrkz8GFXAexeWFdi22mjE1d16dftH2qNaytVxqiRTGlMfpw==}
+  /prettier/2.8.3:
+    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -5821,6 +5825,17 @@ packages:
       - supports-color
     dev: true
 
+  /untyped/1.2.2:
+    resolution: {integrity: sha512-EANYd5L6AdpgfldlgMcmvOOnj092nWhy0ybhc7uhEH12ipytDYz89EOegBQKj8qWL3u1wgYnmFjADhsuCJs5Aw==}
+    dependencies:
+      '@babel/core': 7.20.12
+      '@babel/standalone': 7.20.12
+      '@babel/types': 7.20.7
+      scule: 1.0.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /update-browserslist-db/1.0.10_browserslist@4.21.4:
     resolution: {integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==}
     hasBin: true
@@ -6022,7 +6037,7 @@ packages:
       vue-router:
         optional: true
     dependencies:
-      '@intlify/shared': 9.3.0-beta.15
+      '@intlify/shared': 9.3.0-beta.16
       '@intlify/vue-i18n-bridge': 0.8.0_vue-i18n@9.3.0-beta.10
       '@intlify/vue-router-bridge': 0.8.0
       ufo: 1.0.0
