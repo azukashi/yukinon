@@ -4,20 +4,20 @@ specifiers:
   '@nuxt/image-edge': 1.0.0-27919678.2f5b64b
   '@nuxtjs/color-mode': 3.2.0
   '@nuxtjs/i18n': 8.0.0-beta.9
-  '@nuxtjs/strapi': 1.7.1
+  '@nuxtjs/strapi': 1.8.1
   '@nuxtjs/tailwindcss': 6.4.0
   nuxt: 3.2.0
-  nuxt-icon: 0.2.11
+  nuxt-icon: 0.3.2
   prettier: 2.8.4
 
 devDependencies:
   '@nuxt/image-edge': 1.0.0-27919678.2f5b64b
   '@nuxtjs/color-mode': 3.2.0
   '@nuxtjs/i18n': 8.0.0-beta.9
-  '@nuxtjs/strapi': 1.7.1
+  '@nuxtjs/strapi': 1.8.1
   '@nuxtjs/tailwindcss': 6.4.0
   nuxt: 3.2.0
-  nuxt-icon: 0.2.11
+  nuxt-icon: 0.3.2
   prettier: 2.8.4
 
 packages:
@@ -762,8 +762,8 @@ packages:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
 
-  /@iconify/vue/4.0.2:
-    resolution: {integrity: sha512-LRp+mYh8N0bcX4lustHtI5o1aEoio9HN3/19uIzVOvI78qopKBjzsDK5hkEZYDSc6+LKG8hfLxTxpW8CejXGZg==}
+  /@iconify/vue/4.1.0:
+    resolution: {integrity: sha512-rBQVxNoSDooqgWkQg2MqkIHkH/huNuvXGqui5wijc1zLnU7TKzbBHW9VGmbnV4asNTmIHmqV4Nvt0M2rZ/9nHA==}
     peerDependencies:
       vue: '>=3'
     dependencies:
@@ -1381,11 +1381,11 @@ packages:
       - vue-router
     dev: true
 
-  /@nuxtjs/strapi/1.7.1:
-    resolution: {integrity: sha512-0QJmG+BMbljddo2mB7VYXMXNg0P0p4T2nSvGKoZC/kn2aRh+7AmSetaqysQzzK2uhz4aw27mushLGgudtNJJrw==}
+  /@nuxtjs/strapi/1.8.1:
+    resolution: {integrity: sha512-91tkXC/nP351HkwkwCvcsGz3QcHYpvdJYZD1edEhfQW/xQzW5SHoHTF/KL8XUigLkkDP3oKtTesjV6qUw01ssw==}
     dependencies:
-      '@nuxt/kit': 3.0.0
-      defu: 6.1.1
+      '@nuxt/kit': 3.2.0
+      defu: 6.1.2
       graphql: 16.6.0
       qs: 6.11.0
     transitivePeerDependencies:
@@ -2755,10 +2755,6 @@ packages:
 
   /defu/3.2.2:
     resolution: {integrity: sha512-8UWj5lNv7HD+kB0e9w77Z7TdQlbUYDVWqITLHNqFIn6khrNHv5WQo38Dcm1f6HeNyZf0U7UbPf6WeZDSdCzGDQ==}
-    dev: true
-
-  /defu/6.1.1:
-    resolution: {integrity: sha512-aA964RUCsBt0FGoNIlA3uFgo2hO+WWC0fiC6DBps/0SFzkKcYoM/3CzVLIa5xSsrFjdioMdYgAIbwo80qp2MoA==}
     dev: true
 
   /defu/6.1.2:
@@ -4545,11 +4541,11 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-icon/0.2.11:
-    resolution: {integrity: sha512-mHFgTMrf+CzG7l6cdVQ7vF2XaXz8fs53QC6bk+zVZEHBCCwFtRoG0H+62y+y0iAo2+cD4VYmvsAiRMKIlIGxVA==}
+  /nuxt-icon/0.3.2:
+    resolution: {integrity: sha512-066pfova2nE9GZDvHE9oMkqJCwsnJvOZKU2FOSzRpjfXupH3UPtP9Zw8+C2wvZ82Nel6fuRoIUNQh5Sx8ZeQrQ==}
     dependencies:
-      '@iconify/vue': 4.0.2
-      '@nuxt/kit': 3.1.1
+      '@iconify/vue': 4.1.0
+      '@nuxt/kit': 3.2.0
       nuxt-config-schema: 0.4.4
     transitivePeerDependencies:
       - rollup
